@@ -1,0 +1,20 @@
+@charset "UTF-8";
+html {
+    font-size: 100%;
+}
+
+.wrapper {
+    width: 1180px;
+}
+
+
+/*header*/
+#header-inner {
+    display: flex;
+    max-width: 11;
+}
+
+#header-inner .header-logo img {
+    width: 263px;
+    height: 73px;
+}
