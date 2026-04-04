@@ -118,6 +118,7 @@ li {
 #philosophy {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 80px;
 }
 
 #philosophy .philosophy-text {
@@ -148,4 +149,68 @@ li {
 #philosophy .philosophy-img img {
     width: 100%;
     height: auto;
+}
+
+/*service*/
+#service {
+    background-color: #F5FCF8;
+}
+
+#service .Treatment-details {
+    max-width: 1180px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#service .Treatment-details .service-title {
+    padding-top: 71px;
+    font-size: 24px;
+    margin-bottom: 68px;
+}
+
+#service .Treatment-details p {
+    margin-bottom: 33px;
+}
+
+#service .Treatment-details .service-title span {
+    background: linear-gradient(transparent 60%, rgb(110, 244, 110) 60%);
+}
+/*card*/
+#service .Treatment-details .service-card {
+    display: flex;
+    gap: 20px;
+}
+
+#service .Treatment-details .service-card li {
+    width: calc((100% - 40px) / 3);
+    display: flex;
+    flex-direction: column;
+    height: 590px;
+    background: white;
+    border: 1px solid #e3e2e2;
+    border-radius: 10px;
+}
+
+#service .Treatment-details .service-card .card-title {
+    padding-top: 39px;
+    font-size: 24px;
+    padding-bottom: 47px;
+}
+
+#service .Treatment-details .service-card p {
+    padding: 0 36px;
+    line-height: 2.3;
+    text-align: left;
+}
+
+#service .Treatment-details .service-card .service-img {
+    height: 180px;
+    margin-top: auto;
+}
+
+#service .Treatment-details .service-card .service-img img {
+    height: auto;
+    width: 50%;
 }
