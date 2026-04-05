@@ -9,17 +9,24 @@ body {
 }
 
 .wrapper {
-    width: 1180px;
+    max-width: 1180px;
+    width: 100%;
     margin: 0 auto;
 }
 
 .content {
-    width: 1920px;
+    max-width: 1920px;
+    width: 100%;
 }
 
 li {
     list-style: none;
 }
+
+img {
+    width: 100%;
+    height: auto;
+    }
 
 /*header*/
 #header-inner {
@@ -376,3 +383,51 @@ information .Business-hours .footer-bottom .copyright {
     font-size: 13px;
 }
 
+/*レスポンシブ*/
+/* PCが基本 */
+@media screen and (max-width: 1024px) {
+  /* タブレット */
+    #header-inner {
+        height: 110px;
+        padding: 20px 16px;
+    }
+
+    #header-inner .header-logo img {
+        width: 220px;
+        height: auto;
+    }
+
+    #header-inner .header-text p {
+        font-size: 12px;
+    }
+
+    #header-inner .header-text a {
+        font-size: 18px;
+    }
+
+    #header-inner .header-text img {
+        width: 20px;
+        height: 20px;
+    }
+
+    #mainvisual .copy-box {
+        top: 12;
+        left: 6;
+        gap: 40px;
+    }
+
+    #mainvisual .copy-box .copy-text {
+        width: 90px;
+        height: 390px;
+    }
+
+    #mainvisual .copy-box .copy-text .item-text {
+        font-size: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 767px) {
+  /* スマホ */
+}
