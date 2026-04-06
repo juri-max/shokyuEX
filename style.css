@@ -244,6 +244,7 @@ img {
     border-radius: 30px;
     padding-top: 27px;
     padding-inline: 66px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
 #service .notice .notice-card .notice-list .notice-item {
@@ -290,6 +291,11 @@ img {
 
 #information .map {
     margin-right: 40px;
+    width: 50%;
+}
+
+#information .Business-hours {
+    width: 50%;
 }
 
 #information .Business-hours .footer-logo {
@@ -379,12 +385,25 @@ img {
     text-align: right;
 }
 
-information .Business-hours .footer-bottom .copyright {
+#information .Business-hours .footer-bottom .copyright {
     font-size: 13px;
 }
 
 /*レスポンシブ*/
 /* PCが基本 */
+@media screen and (max-width: 1440px) {
+    #mainvisual .copy-box .copy-text{
+        width: 70px;
+        height: 400px;
+    }
+
+    #mainvisual .copy-box .copy-text .item-text {
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
   /* タブレット */
     #header-inner {
@@ -411,18 +430,86 @@ information .Business-hours .footer-bottom .copyright {
     }
 
     #mainvisual .copy-box {
-        top: 12;
-        left: 6;
-        gap: 40px;
+        top: 15%;
+        left: 8%;
+        gap: 30px;
     }
 
     #mainvisual .copy-box .copy-text {
-        width: 90px;
-        height: 390px;
+        width: 60px;
+        height: 300px;
     }
 
     #mainvisual .copy-box .copy-text .item-text {
+        font-size: 16px;
+        padding-top: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+        letter-spacing: 0.15em;
+    }
+
+    #philosophy .philosophy-text .text-item {
         font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    #philosophy .philosophy-text p {
+        font-size: 14px;
+    }
+
+    .philosophy-img {
+        padding-right: 10px;
+    }
+
+    #service .Treatment-details .service-card .card-title{
+        font-size: 20px;
+        padding-bottom: 35px;
+    }
+
+    #service .Treatment-details .service-card li {
+        height: 570px;
+    }
+
+    #service .Treatment-details .service-card p {
+        line-height: 1.6;
+    }
+
+    #service .service-card {
+        margin-inline: 10px;
+    }
+
+    #service .notice .notice-card {
+        width: 95%;
+        height: auto;
+        box-sizing: border-box;
+        padding-inline: 20px;
+    }
+
+    #service .notice .notice-card .notice-item .news-text {
+        font-size: 14px;
+    }
+
+
+    #service .notice-card .news-more a {
+        padding-top: 20px;
+    }  
+
+    #information {
+        padding: 0 30px 20px 30px;
+    }
+
+    #information .map {
+        width: 50%;
+    }
+
+    #information .map iframe,
+    #information .map img {
+        width: 100%;
+    }
+
+    #information .Business-hours {
+        width: 50%;
+        height: auto;
     }
 
 
