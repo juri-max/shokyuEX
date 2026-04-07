@@ -281,10 +281,10 @@ img {
     color: #444444;
     text-align: right;
     padding-top: 43px;
-}
+} 
 
 /* footer */
-#information {
+#information .information-info {
     margin-top: 185px;
     display: flex;
 }
@@ -381,11 +381,16 @@ img {
     padding-left: 25px;
 }
 
-#information .Business-hours .footer-bottom {
+#information .footer-bottom {
+    max-width: 1180px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: inline-block;
     text-align: right;
 }
 
-#information .Business-hours .footer-bottom .copyright {
+#information .footer-bottom .copyright {
     font-size: 13px;
 }
 
@@ -515,6 +520,88 @@ img {
 
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   /* スマホ */
-}
+    #mainvisual {
+        margin-bottom: 50px;
+    }
+
+    #mainvisual .copy-box {
+        top: 16%;
+        left: 17%;
+    }
+
+    #mainvisual .copy-box .copy-text {
+        width: 60px;
+        height: 250px;
+        gap: 30px;
+    }
+
+    #mainvisual .copy-box .copy-text .item-text {
+        font-size: 14px;
+    }    
+
+    #philosophy {
+        flex-direction: column;
+    }
+
+    #philosophy .philosophy-text {
+        width: 550px;
+        height: 420px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #philosophy .philosophy-text p {
+        font-size: 18px;
+    }
+
+    #philosophy .philosophy-text .text-item {
+        font-size: 25px;
+    }
+
+    #philosophy .philosophy-img {
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    #service .Treatment-details .service-title {
+        margin-bottom: 40px;
+        padding-top: 30px;
+    }
+
+    #service .Treatment-details .service-card li {
+        margin: 0 auto;
+        width: 60%;
+        height: auto;
+    }
+
+    #service .Treatment-details .service-card .service-img img {
+        height: auto;
+        width: 40%;
+    }
+
+    #information .information-info {
+        flex-direction: column-reverse;
+        gap: 40px;
+        margin-top: 60px;
+    }
+
+    #information .map {
+        width: 80%;
+        padding-bottom: 20px;
+        margin: 0 auto;
+    }
+
+    #information .Business-hours {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #information .footer-bottom .copyright {
+        display: block;
+        text-align: center;
+    }
+
+} 
