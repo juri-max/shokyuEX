@@ -157,7 +157,7 @@ img {
 /*service*/
 #service {
     background-color: #F5FCF8;
-    height: 1520px;
+    padding-bottom: 80px;
 }
 
 #service .Treatment-details {
@@ -191,7 +191,7 @@ img {
     width: calc((100% - 40px) / 3);
     display: flex;
     flex-direction: column;
-    height: 590px;
+    height: auto;
     background: white;
     border: 1px solid #e3e2e2;
     border-radius: 10px;
@@ -238,8 +238,7 @@ img {
 #service .notice .notice-card {
     max-width: 1180px;
     width: 100%;
-    height: 390px;
-    margin: 0 auto;
+    margin: 0 auto 60px;
     background: white;
     border-radius: 30px;
     padding-top: 27px;
@@ -254,19 +253,22 @@ img {
 }
 
 #service .notice .notice-card .notice-list .notice-item .notice-date {
-    font-weight: 400;
+    font-size: 15px;
+    font-weight: 600;
     color: #21A937;
     letter-spacing: -0.002;
 }
 
 #service .notice .notice-card .notice-list .notice-item .notice-category {
+    display: inline-block;
     width: 80px;
-    height: 25px;
+    height: auto;
     text-align: center;
     line-height: 25px;
     color: white;
     background:#444444;
     margin-inline: 26px;
+    padding: 5px;
     font-size: 12px;
 }
 
@@ -281,6 +283,7 @@ img {
     color: #444444;
     text-align: right;
     padding-top: 43px;
+    padding-bottom: 40px;
 } 
 
 /* footer */
@@ -466,13 +469,13 @@ img {
         padding-right: 10px;
     }
 
+    #service .Treatment-details .service-card li {
+        margin: 0 auto;
+    }
+
     #service .Treatment-details .service-card .card-title{
         font-size: 20px;
         padding-bottom: 35px;
-    }
-
-    #service .Treatment-details .service-card li {
-        height: 570px;
     }
 
     #service .Treatment-details .service-card p {
@@ -490,8 +493,12 @@ img {
         padding-inline: 20px;
     }
 
+
     #service .notice .notice-card .notice-item .news-text {
+        flex: 1;
         font-size: 14px;
+        line-height: 1.6;
+        margin: 0;
     }
 
 
@@ -523,7 +530,7 @@ img {
 @media screen and (max-width: 768px) {
   /* スマホ */
     #mainvisual {
-        margin-bottom: 50px;
+        margin-bottom: 10px;
     }
 
     #mainvisual .copy-box {
@@ -543,6 +550,7 @@ img {
 
     #philosophy {
         flex-direction: column;
+        margin-bottom: 0;
     }
 
     #philosophy .philosophy-text {
@@ -566,20 +574,51 @@ img {
         margin: 0 auto;
     }
 
+    #philosophy .philosophy-img img {
+        display: block;
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+    }
+
     #service .Treatment-details .service-title {
         margin-bottom: 40px;
         padding-top: 30px;
     }
 
+    #service .Treatment-details .service-card {
+        flex-direction: column;
+    }
+
     #service .Treatment-details .service-card li {
-        margin: 0 auto;
-        width: 60%;
-        height: auto;
+        width: 50%;
     }
 
     #service .Treatment-details .service-card .service-img img {
         height: auto;
         width: 40%;
+    }
+
+
+    #service .notice .notice-card .notice-item {
+        align-items: flex-start;
+    }
+
+    #service .notice .notice-card .notice-item .notice-meta {
+        width: 70px;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        margin-right: 35px;
+    }
+
+
+    #service .notice .notice-card .notice-item .notice-meta .notice-category {
+        width: 90px;
+        margin: 0;
+        font-weight: 600;
+        text-align: center;
+        padding: 3px 15px;
     }
 
     #information .information-info {
