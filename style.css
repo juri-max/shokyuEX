@@ -574,9 +574,11 @@ img {
     }
 
     #philosophy .philosophy-img img {
+        display: block;
         width: 100%;
         height: auto;
         margin: 0 auto;
+        padding-inline: 30px;
     }
 
     #service .Treatment-details .service-title {
@@ -703,29 +705,77 @@ img {
     }
 
     #mainvisual .copy-box {
-        left: 25%;
+        left: 15%;
         top: 33%;
         
     }
 
     #mainvisual .copy-box .copy-text {
-        width: 30px;
+        width: 40%;
+        height: auto;
     }
 
     #mainvisual .copy-box .copy-text .item-text {
         padding-top: 10px;
-        padding-right: 5px;
-        padding-left: 5px;
+        padding-inline: auto;
         letter-spacing: 0.06em;
+    }
+
+    #philosophy .philosophy-text {
+        padding: 19px 0;
+    }
+
+    #philosophy .philosophy-text .text-item {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+
+    #philosophy .philosophy-text p {
+        width: 100%;
+        height: auto;
+        font-size: 14px;
+        line-height: 2.0;
+        
     }
 
     #philosophy .philosophy-img img {
         width: 70%;
         height: auto;
         display: block;
-        margin: 0;
+        margin: 0 auto;
     }
-    
+
+    #service .Treatment-details .service-title {
+        font-size: 20px;
+    }
+
+    #service .Treatment-details p {
+        display: inline-block;
+        width: 76%;
+        height: auto;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+    #service .Treatment-details .service-card li {
+        width: 90%;
+    }
+
+    #service .Treatment-details .service-card li .card-title {
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    #service .Treatment-details .service-card li p {
+        padding: 0 ;
+    }
+
+
+    #service .Treatment-details .service-card .service-img img {
+        width: 40%;
+        height: auto;
+    }
 
     #information .map iframe {
         display: block;
@@ -734,6 +784,17 @@ img {
     }
 }
 @media screen and (max-width: 375px) {
+    #philosophy .philosophy-text p {
+        font-size: 12px;        
+    }
+
+
+    #service .Treatment-details .service-card .service-img img {
+        width: 60%;
+        height: auto;
+    }
+
+
     #information .Business-hours {
         width: 100%;
         margin: 0 auto;
