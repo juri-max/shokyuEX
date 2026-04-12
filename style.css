@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    font-family: "Nato Sans JP", sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
     color: #444444;
 }
 
@@ -36,7 +36,7 @@ img {
     height: 130px;
     margin: 0 auto;
     justify-content: space-between;
-    padding: 30px 20px;
+    padding: 15px 20px;
     box-sizing: border-box;
     align-items: center;
     box-sizing: border-box;
@@ -49,9 +49,10 @@ img {
 }
 
 #header-inner .header-text img {
-    width: 25px;
-    height: 25px;
-    vertical-align: middle;
+    width: 23px;
+    height: 24px;
+    display: block;
+    margin-right: 4.6px;
 }
 
 #header-inner .header-text {
@@ -64,19 +65,17 @@ img {
 
 #header-inner .header-text p {
     font-size: 14px;
-    margin: 0;
     font-weight: 400;
-    letter-spacing: -0.001em;
+    line-height: 1.6;
 }
 
 #header-inner .header-text a {
     display: inline-flex;
     align-items: center;
-    font-size: 20px;
+    font-size: 24px;
     color: #21A937;
     font-weight: 700;
-    letter-spacing: -0.004em;
-    gap: 2px;
+    letter-spacing: -0.002em;
     text-decoration: none;
 }
 
@@ -127,16 +126,17 @@ img {
 #philosophy .philosophy-text {
     width: 490px;
     height: 420px;
-    padding: 19px 32px;
+    padding: 17px 33px;
 }
 
 #philosophy .philosophy-text p {
-    line-height: 2.5;
+    line-height: 2.41;
 }
 
 #philosophy .philosophy-text .text-item {
     display: inline-block;
-    line-height: 2.7;
+    line-height: 2.75;
+    letter-spacing: 0.0028em;
     margin-bottom: 20px;
 }
 
@@ -171,11 +171,13 @@ img {
 #service .Treatment-details .service-title {
     padding-top: 71px;
     font-size: 24px;
-    margin-bottom: 68px;
+    margin-bottom: 70px;
+    line-height: 1.42;
 }
 
 #service .Treatment-details p {
     margin-bottom: 33px;
+    line-height: 1.5;
 }
 
 #service .Treatment-details .service-title span {
@@ -204,19 +206,22 @@ img {
 }
 
 #service .Treatment-details .service-card p {
-    padding: 0 36px;
-    line-height: 2.3;
+    padding: 0 35px;
+    line-height: 2.34;
     text-align: left;
 }
 
 #service .Treatment-details .service-card .service-img {
-    height: 180px;
+    height: 210px;
     margin-top: auto;
 }
 
 #service .Treatment-details .service-card .service-img img {
+    display: inline-block;
+    margin-top: 24px;
     height: auto;
     width: 50%;
+    
 }
 
 /*notice*/
@@ -229,6 +234,7 @@ img {
     margin-top: 82px;
     margin-bottom: 70px;
     text-align: center;
+    line-height: 1.4;
 }
 
 #service .notice .notice-title span {
@@ -238,52 +244,70 @@ img {
 #service .notice .notice-card {
     max-width: 1180px;
     width: 100%;
+    height: auto;
     margin: 0 auto 60px;
     background: white;
     border-radius: 30px;
-    padding-top: 27px;
+    padding-top: 28px;
     padding-inline: 66px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
+
+
 #service .notice .notice-card .notice-list .notice-item {
     display: flex;
+    align-items: center;
     border-bottom: 1px solid rgb(219, 218, 218);
-    padding: 18px 0;
+    padding: 17.78px 0;
 }
 
-#service .notice .notice-card .notice-list .notice-item .notice-date {
-    font-size: 15px;
-    font-weight: 600;
+
+#service .notice .notice-card .notice-list .notice-item .notice-meta .notice-date {
+    font-size: 16px;
+    font-weight: 700;
     color: #21A937;
-    letter-spacing: -0.002;
+    letter-spacing: -0.002em;
+    line-height: 1;
 }
 
-#service .notice .notice-card .notice-list .notice-item .notice-category {
-    display: inline-block;
+#service .notice .notice-card .notice-list .notice-item .notice-meta {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+#service .notice .notice-card .notice-list .notice-item .notice-meta .notice-category {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 80px;
-    height: auto;
-    text-align: center;
-    line-height: 25px;
+    height: 24px;
     color: white;
     background:#444444;
-    margin-inline: 26px;
-    padding: 5px;
+    margin-inline: 30px;
+    padding: 0px 16px;
     font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    transform: translateY(1px);
 }
 
+
 #service .notice .notice-card .notice-list .notice-item .news-text {
-    font-weight: 600;
+    margin: 0;
+    font-weight: 700;
     color: #444444;
+    line-height: 1.3;
 }
 
 #service .notice .news-more a {
     display: block;
+    text-align: right;
     text-decoration: none;
     color: #444444;
-    text-align: right;
-    padding-top: 43px;
-    padding-bottom: 40px;
+    padding-top: 46px;
+    padding-bottom: 28px;
 } 
 
 /* footer */
