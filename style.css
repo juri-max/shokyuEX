@@ -319,25 +319,27 @@ img {
 
 /* footer */
 #information .information-info {
-    margin-top: 185px;
+    margin-top: 150px;
     display: flex;
 }
 
 #information .map {
-    margin-right: 40px;
+    margin-right: 52px;
     width: 50%;
+    height: auto;
 }
 
 #information .Business-hours {
     width: 50%;
+    height: auto;
 }
 
 #information .Business-hours .footer-logo {
-    margin-bottom: 50px;
+    margin-bottom: 48px;
 }
 
 #information .Business-hours .footer-logo img {
-    width: 50%;
+    width: 49%;
 }
 
 #information .Business-hours .infomation-address {
@@ -345,85 +347,112 @@ img {
 }
 
 #information .Business-hours .infomation-address .post-code {
-    margin-right: 20px;
+    margin-right: 16px;
 }
 
 #information .Business-hours a {
     display: inline-block;
-    font-size: 20px;
+    font-size: 24px;
     color: #21A937;
     text-decoration: none;
     font-weight: 700;
     letter-spacing: -0.004em;
-    margin-bottom: 28px;
+    margin-bottom: 25px;
 }
 
 #information .Business-hours a img {
-    width: 25px;
-    height: 25px;
+    width: 24.5px;
+    height: 24.5px;
     vertical-align: middle;
+    margin-right: 7px;
 }
 
 #information .Business-hours .opening-hours {
-    width: 100%;
-    border-top: 1px solid  rgb(219, 218, 218);
-    border-bottom: 1px solid  rgb(219, 218, 218);
-    margin-bottom: 22px;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 2px solid #E7E7E7;
+    border-bottom: 2px solid #E7E7E7;
 }
 
-#information .Business-hours .opening-hours th {
-    padding: 20px 15px 20px 0;
-    position: relative;
-    vertical-align: top;
+
+.opening-hours dt {
+    width: 16.5%;
+    padding-right: 10px;
     font-size: 14px;
+    margin-top: 19px;
+    padding-top: 3px;
+    padding-left: 3px;
     font-weight: 400;
-    text-align: left;
 }
 
-#information .Business-hours .opening-hours th::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 10px;
-    bottom: 10px;
-    width: 1px;
-    background: rgb(219, 218, 218);
+.opening-hours dd {
+    width: 83.5%;
+    border-left: 2px solid #E7E7E7;
+    padding-left: 26.5px;
 }
 
-#information .Business-hours .opening-hours .day {
-    padding-left: 25px;
-    padding-right: 22px;
-}
-
-#information .Business-hours .opening-hours .day span {
-    background:  linear-gradient(transparent 60%, rgb(194, 249, 194) 60%)
-}
-
-
-#information .Business-hours .opening-hours td {
-    display: inline-block;
-    padding-top: 20px;
+.opening-hours dd p:first-of-type {
     font-size: 14px;
-    letter-spacing: -0.02px;
-}
-
-#information .Business-hours .opening-hours tr:last-child td {
-    padding-top: 20px;
-    padding-left: 25px;
-}
-
-#information .footer-bottom {
-    max-width: 1180px;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
     display: inline-block;
-    text-align: right;
+    font-weight: normal;
+    text-decoration-color: #99E5A5;
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: -1px;
+    text-decoration-skip-ink: none;
+    line-height: 1.2em;
 }
 
-#information .footer-bottom .copyright {
-    font-size: 13px;
+.opening-hours dd p {
+    font-size: 14px;
+    display: inline-block;
 }
+
+.opening-hours dd p:nth-of-type(2) {
+    margin-left: 19.5px;
+}
+
+.opening-hours dd p:last-of-type {
+    margin-left: 14px;
+}
+
+.opening-hours .line-first {
+    padding-top: 3px;
+    margin-top: 17px;
+}
+
+.opening-hours .line-second {
+    margin-left: 16.5%;
+    padding-top: 11px;
+}
+
+.opening-hours .line-third {
+    padding-bottom: 6px;
+    margin-bottom: 28px;
+    margin-left: 16.5%;
+    padding-top: 10px;
+}
+
+.opening-hours .last-dt {
+    margin-top: 0;
+    padding-left: 4px;
+}
+.opening-hours .last-dd {
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    margin-bottom: 15px;
+}
+
+#information .copyright {
+    margin-top: 22.5px;
+    display: block;
+    text-align: right;
+    font-size: 11px;
+    font-weight: 400;
+    padding-right: 2px;
+}
+
 
 /*レスポンシブ*/
 /* PCが基本 */
