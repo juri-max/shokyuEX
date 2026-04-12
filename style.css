@@ -49,10 +49,11 @@ img {
 }
 
 #header-inner .header-text img {
-    width: 23px;
-    height: 24px;
+    width: 25px;
+    height: 25px;
     display: block;
     margin-right: 4.6px;
+    margin-top: 5px;
 }
 
 #header-inner .header-text {
@@ -60,13 +61,12 @@ img {
     flex-direction: column;
     align-items: flex-end;
     text-align: right;
-    gap: 4px;
+    line-height: 1.65;
 }
 
 #header-inner .header-text p {
     font-size: 14px;
     font-weight: 400;
-    line-height: 1.6;
 }
 
 #header-inner .header-text a {
@@ -103,12 +103,12 @@ img {
 
 #mainvisual .copy-box .item-text {
     writing-mode: vertical-rl;
-    padding-top: 25px;
+    padding-top: 24.8px;
     padding-right:  27px;
     padding-left: 29px;
     font-size: 28px;
     color: #444444;
-    letter-spacing: 0.25em;
+    letter-spacing: 0.24em;
     align-items: center;
 }
 
@@ -130,22 +130,22 @@ img {
 }
 
 #philosophy .philosophy-text p {
-    line-height: 2.41;
+    line-height: 2.4;
 }
 
 #philosophy .philosophy-text .text-item {
     display: inline-block;
-    line-height: 2.75;
+    line-height: 2.73;
     letter-spacing: 0.0028em;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
 }
 
 #philosophy .philosophy-text .text-item span {
-    background: linear-gradient(transparent 60%, rgb(159, 251, 159) 60%);
+    background: linear-gradient(transparent 74%, rgb(159, 251, 159) 40%);
 }
 
 #philosophy .philosophy-img {
-    width: 697px;
+    width: 690px;
     height: 430px;
 }
 
@@ -200,14 +200,14 @@ img {
 }
 
 #service .Treatment-details .service-card .card-title {
-    padding-top: 39px;
+    padding-top: 37px;
     font-size: 24px;
-    padding-bottom: 47px;
+    padding-bottom: 41px;
 }
 
 #service .Treatment-details .service-card p {
-    padding: 0 35px;
-    line-height: 2.34;
+    padding: 4.5px 36px 0;
+    line-height: 2.38;
     text-align: left;
 }
 
@@ -220,7 +220,7 @@ img {
     display: inline-block;
     margin-top: 24px;
     height: auto;
-    width: 50%;
+    width: 49%;
     
 }
 
@@ -231,26 +231,33 @@ img {
 
 #service .notice .notice-title {
     font-size: 24px;
-    margin-top: 82px;
+    margin-top: 80px;
     margin-bottom: 70px;
     text-align: center;
     line-height: 1.4;
 }
 
 #service .notice .notice-title span {
-    background:  linear-gradient(transparent 60%, rgb(110, 244, 110) 60%);
+    background:  linear-gradient(transparent 70%, rgb(145, 238, 145) 60%);
 }
 
 #service .notice .notice-card {
     max-width: 1180px;
     width: 100%;
-    height: auto;
+    height: 390px;
     margin: 0 auto 60px;
     background: white;
     border-radius: 30px;
-    padding-top: 28px;
-    padding-inline: 66px;
+    padding-top: 30px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+
+#service .notice .notice-card .notice-list {
+    max-width: 1050px;
+    width: 100%;
+    height: auto;
+    margin-left: 65px;
 }
 
 
@@ -258,8 +265,9 @@ img {
 #service .notice .notice-card .notice-list .notice-item {
     display: flex;
     align-items: center;
+    padding-bottom:18px;
     border-bottom: 1px solid rgb(219, 218, 218);
-    padding: 17.78px 0;
+    padding-top: 18px;
 }
 
 
@@ -268,7 +276,6 @@ img {
     font-weight: 700;
     color: #21A937;
     letter-spacing: -0.002em;
-    line-height: 1;
 }
 
 #service .notice .notice-card .notice-list .notice-item .notice-meta {
@@ -279,26 +286,21 @@ img {
 
 #service .notice .notice-card .notice-list .notice-item .notice-meta .notice-category {
     display: inline-flex;
-    align-items: center;
     justify-content: center;
     width: 80px;
     height: 24px;
     color: white;
     background:#444444;
     margin-inline: 30px;
-    padding: 0px 16px;
+    padding: 4px 16px;
     font-size: 12px;
     font-weight: 700;
-    line-height: 1;
-    transform: translateY(1px);
 }
 
 
 #service .notice .notice-card .notice-list .notice-item .news-text {
-    margin: 0;
     font-weight: 700;
     color: #444444;
-    line-height: 1.3;
 }
 
 #service .notice .news-more a {
@@ -306,9 +308,14 @@ img {
     text-align: right;
     text-decoration: none;
     color: #444444;
-    padding-top: 46px;
+    padding-top: 47.5px;
+    padding-right: 40px;
     padding-bottom: 28px;
 } 
+
+#service .notice .news-more a span {
+    padding-left: 13px;
+}
 
 /* footer */
 #information .information-info {
